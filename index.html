@@ -350,9 +350,9 @@
             <div class="footer-form-container">
                 <p class="subscribe-title">Subscribe</p>
                 <form class="footer-form">
-                    <label for="subscribe-footer" aria-label="subscribe-footer"></label>
-                    <input type="email" class="footer-input" name="subscribe-footer" id="subscribe-footer"
-                        placeholder="E-mail">
+                    <label aria-label="subscribe-footer" class="subscribe-footer-label">
+                        <input type="email" class="footer-input" name="subscribe-footer" placeholder="E-mail">
+                    </label>
                     <button type="submit" class="footer-btn-form">Subscribe <svg class="footer-btn-icon" width="24"
                             height="24">
                             <use href="./images/icons.svg#icon-Frame"></use>
@@ -397,18 +397,17 @@
                         </svg>
                     </div>
                 </div>
-                <div class="form-container">
-                    <label for="modal-comment" class="label-class">Comment</label>
-                    <div>
-                        <textarea name="modal-comment" placeholder="Text input" id="modal-comment"
-                            class="modal-textarea"></textarea>
-                    </div>
+                <div class="form-container-textarea">
+                    <label for="user-comment" class="label-class">Comment</label>
+                    <textarea name="user-comment" placeholder="Text input" id="user-comment"
+                        class="modal-textarea"></textarea>
                 </div>
-                <div class="form-container">
-                    <input type="checkbox" name="policy" id="policy" class="input-check visually-hidden" value="true">
-                    <label for="policy" class="label-check"><span><svg width="10" height="10" class="icon-check">
+                <div class="form-container-check">
+                    <input type="checkbox" name="policy" id="user-privacy" class="input-check visually-hidden"
+                        value="true">
+                    <label for="user-privacy" class="label-check"><span><svg width="10" height="8" class="icon-check">
                                 <use href="./images/icons.svg#icon-check"></use>
-                            </svg></span> accept the terms and conditions of the <a href="">Privacy
+                            </svg></span>I accept the terms and conditions of the<a href="" class="check-link">Privacy
                             Policy</a></label>
                 </div>
                 <button type="submit" class="send-btn">Send</button>
